@@ -1,1 +1,1 @@
-:D
+A website for a game,
