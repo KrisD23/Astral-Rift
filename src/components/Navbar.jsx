@@ -10,8 +10,8 @@ const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
-  const [isAudioPlaying, setIsAudioPlaying] = useState(false);
-  const [isIndicatorActive, setIsIndicatorActive] = useState(false);
+  const [isAudioPlaying, setIsAudioPlaying] = useState(true);
+  const [isIndicatorActive, setIsIndicatorActive] = useState(true);
 
   // Refs for audio and navigation container
   const audioElementRef = useRef(null);
@@ -65,7 +65,7 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-white/5 backdrop-blur-xl rounded-xl"
+      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-white/5 backdrop-blur-3xl rounded-full"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
