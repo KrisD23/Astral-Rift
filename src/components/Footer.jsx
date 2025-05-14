@@ -1,10 +1,10 @@
-import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://youtube.com", icon: <FaYoutube /> },
-  { href: "https://medium.com", icon: <FaMedium /> },
+  { href: "https://github.com/krisd23", icon: <FaGithub /> },
+  { href: "https://www.linkedin.com/in/krisd23/", icon: <FaLinkedin /> },
+  { href: "https://krishandwivedi.netlify.app/", icon: <FaGlobe /> },
+  { href: "https://x.com/krisd23_", icon: <FaTwitter /> },
 ];
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
     <footer className="w-screen bg-[#5542ff] py-4 text-black">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
         <p className="text-center text-sm font-light md:text-left">
-          ©Nova 2024. All rights reserved
+          ©KD 2025.This is a demo website for a portfolio.
         </p>
 
-        <div className="flex justify-center gap-4  md:justify-start">
+        <div className="flex justify-center gap-4   md:justify-start">
           {socialLinks.map((link, index) => (
             <a
               key={index}
@@ -33,7 +33,7 @@ const Footer = () => {
           href="#privacy-policy"
           className="text-center text-sm font-light hover:underline md:text-right"
         >
-          Privacy Policy
+          Back to top
         </a>
       </div>
     </footer>
